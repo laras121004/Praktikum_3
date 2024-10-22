@@ -41,96 +41,30 @@ Kelas Mahasiswa adalah subclass yang mewarisi atribut dan metode dari superclass
 Kesimpulan:
 Kelas ini memungkinkan untuk membuat objek mahasiswa yang memiliki informasi seperti nama, jenis kelamin, umur, alamat, nim, dan jurusan. Setiap objek Mahasiswa dapat mengubah atau mendapatkan informasi tersebut menggunakan getter dan setter.
 
-# Hasil Outout
-!gambar[]
+# Hasil Output
+![gambar](Output1.png)
 
 ## - Implementasikan java code diagram pada class berikut:
-!gambar[]
+
+![gambar](Soal.png)
 
 - Menampilkan class Pegawai
-public class Pegawai {
-    private String nama;
-    private double gajiPokok;
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setGajiPokok(double gajiPokok) {
-        this.gajiPokok = gajiPokok;
-    }
-
-    public double getGajiPokok() {
-        return gajiPokok;
-    }
-
-    public void cetakInfo() {
-        System.out.println("Nama: " + nama);
-        System.out.println("Gaji Pokok: " + gajiPokok);
-    }
-} 
+  
+![gambar](pegawai.png)
 
 - Menampilkan Class Manager
-  class Manager  extends Pegawai {
-    private double tunjangan;
-
-    public void setTunjangan(double tunjangan) {
-        this.tunjangan = tunjangan;
-    }
-
-    public double getTunjangan() {
-        return tunjangan;
-    }
-}
-
+  
+![gambar](manager.png)
+  
 - Menampilkan Class Programmer
-  class Programmer extends Pegawai {
-    private double bonus;
+  
+![gambar](programmer.png)
 
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
-    }
-
-    public double getBonus() {
-        return bonus;
-    }
-
-    /**
-     *
-     */
-    @Override
-    public void cetakInfo() {
-        super.cetakInfo();
-        System.out.println("Bonus: " + bonus);
-    }
-
-    public void cetakBonus() {
-        System.out.println("Bonus: " + bonus);
-    }
-} 
-
-- Menampilkan Class Main
-public class Main {
-   public static void main(String[] args) {
-        // Membuat objek Manager
-        Manager manajer = new Manager();
-        manajer.setNama("Budi");
-        manajer.setGajiPokok(5000000);
-        manajer.setTunjangan(2000000);
-        manajer.cetakInfo();
-
-        // Membuat objek Programmer
-        Programmer programmer = new Programmer();
-        programmer.setNama("Siti");
-        programmer.setGajiPokok(4000000);
-        programmer.setBonus(1000000);
-        programmer.cetakInfo();  
-}
-}
+- Menampilkan class Main
+  
+![gambar](main.png)
 
 Pada implementasi ini, class Manager dan Programmer mewarisi atribut dan metode dari class Pegawai. Mereka juga menambahkan atribut baru yaitu tunjangan untuk Manager dan bonus untuk Programmer, dengan metode setter, getter, dan metode tambahan untuk mencetak informasi yang relevan.
 
+## Hasil Output
+![gambar](Output2.png)
